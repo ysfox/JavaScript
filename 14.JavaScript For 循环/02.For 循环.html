@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<p>点击下面的按钮，将代码块循环五次：</p>
+<button onclick="myFunction()">点击这里</button>
+<p id="demo"></p>
+
+<script>
+    function myFunction()
+    {
+        var x="";
+        for (var i=0;i<5;i++)
+        {
+            x=x + "The number is " + i + "<br>";
+        }
+        document.getElementById("demo").innerHTML=x;
+    }
+    cars=["BMW","Volvo","Saab","Ford"];
+    for (var i=0,l=cars.length; i<l; i++)
+    {
+        document.write(cars[i] + "<br>");
+    }
+    document.write("<br>");
+    var i=0,len=cars.length;
+    for (; i<len; )
+    {
+        document.write(cars[i] + "<br>");
+        i++;
+    }
+</script>
+</body>
+</html>

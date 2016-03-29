@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<!--
+onload 和 onunload 事件会在用户进入或离开页面时被触发。
+onload 事件可用于检测访问者的浏览器类型和浏览器版本，并基于这些信息来加载网页的正确版本。
+onload 和 onunload 事件可用于处理 cookie。
+-->
+<body onload="checkCookies()">
+
+<script>
+    function checkCookies()
+    {
+        if (navigator.cookieEnabled==true)
+        {
+            alert("已启用 cookie")
+        }
+        else
+        {
+            alert("未启用 cookie")
+        }
+    }
+</script>
+
+<p>提示框会告诉你，浏览器是否已启用 cookie。</p>
+</body>
+</html>

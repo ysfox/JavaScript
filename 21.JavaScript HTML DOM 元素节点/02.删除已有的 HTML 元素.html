@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div id="div1">
+    <p id="p1">这是一个段落。</p>
+    <p id="p2">这是另一个段落。</p>
+</div>
+
+<script>
+    var parent=document.getElementById("div1");
+    var child=document.getElementById("p1");
+    parent.removeChild(child);
+    /**
+     * 提示：如果能够在不引用父元素的情况下删除某个元素，就太好了。
+     var child=document.getElementById("p1");
+     child.parentNode.removeChild(child);
+     * */
+</script>
+</body>
+</html>
