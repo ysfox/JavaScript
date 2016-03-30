@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    function person(firstname,lastname,age,eyecolor)
+    {
+        this.firstname=firstname;
+        this.lastname=lastname;
+        this.age=age;
+        this.eyecolor=eyecolor;
+        this.changeName=changeName;
+    }
+    myMother=new person("Steve","Jobs",56,"green");
+    //您可以通过为对象赋值，向已有对象添加新属性：
+    myMother.firstname="Bill";
+    myMother.lastname="Gates";
+    myMother.age=56;
+    myMother.eyecolor="blue";
+
+    x=myMother.firstname;       //Bill
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+
+//    整数（不使用小数点或指数计数法）最多为 15 位。
+    var x;
+    document.write("<p>只有 17 位: ");
+    x=12345678901234567890;
+    document.write(x + "</p>");
+
+//    小数的最大位数是 17，但是浮点运算并不总是 100% 准确：
+    document.write("<p>0.2 + 0.1 = ");
+    x=0.2+0.1;
+    document.write(x + "</p>");
+
+    document.write("<p>可分别乘以 10 并除以 10 : ");
+    x=(0.2*10+0.1*10)/10;
+    document.write(x +"</p>");
+
+</script>
+</body>
+</html>
